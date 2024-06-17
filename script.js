@@ -65,7 +65,7 @@ function slider() {
 setInterval(slider, 2000);
 //Carrossel
 
-
+//Carrosel 2
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -94,3 +94,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+//Carrosel 2
