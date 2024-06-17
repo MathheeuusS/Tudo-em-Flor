@@ -43,6 +43,7 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
+
 //Get the modal
 var modal = document.getElementById("myModal1");
 var modal = document.getElementById("myModal2")
