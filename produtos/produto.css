@@ -113,13 +113,14 @@
   
   body {
     background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
   }
-  
+  main{
+    padding: 0% 5%;
+  }
   /* Center website */
   .main {
-    max-width: 1000px;
     margin: auto;
   }
   
@@ -155,7 +156,7 @@
   /* Content */
   .content {
     background-color: white;
-    padding: 10px;
+    padding: 0px;
   }
   
   /* The "show" class is added to the filtered elements */
@@ -168,7 +169,7 @@
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: white;
+    background-color: #ffffff;
     cursor: pointer;
   }
   
@@ -179,7 +180,11 @@
   
   /* Add a dark background color to the active button */
   .btn.active {
-    background-color: #666;
+    background-color: #65298A;
      color: white;
   }
-  
+
+  main img{
+    height: 50vh;
+    max-width: 50vh;
+  }

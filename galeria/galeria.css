@@ -117,10 +117,14 @@ nav {
   margin-bottom: 1.5%;
   margin-top: 1.5%;
 }
-
+.perfil{
+  width: 80%;
+  max-width: 300px;
+  border-radius: 100%;
+  border: 5px solid #ff0080;
+}
 .logoperfil{
   margin-right: 1%;
-  
 }
 
 .bio{
