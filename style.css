@@ -29,7 +29,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: #FF8459;
-  height: 12vh;
+  height: 14vh;
   font-family: "Rubik", sans-serif;
 }
 .nav-list {
@@ -56,6 +56,7 @@ nav {
     overflow-x: hidden;
   }
   .nav-list {
+    display: none;
     position: absolute;
     top: 8vh;
     right: 0;
@@ -67,6 +68,7 @@ nav {
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    z-index: 1;
   }
   .nav-list li {
     margin-left: 0;
@@ -75,8 +77,17 @@ nav {
   .mobile-menu {
     display: block;
   }
+
+  .rose
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 }
 .nav-list.active {
+  display: flex;
   transform: translateX(0);
 }
 
@@ -102,7 +113,6 @@ nav {
 
 /* Carrosel Principal */
 body {
-
   margin: 0;
   min-height: 100vh;
 }
@@ -113,12 +123,15 @@ main
   margin: auto;
 }
 .carrossel {
-  filter: drop-shadow(0px 0px 10px #000);
+  /*
+  filter: drop-shadow(0px 0px 10px #000);*/
   overflow: hidden;
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   height: 95%;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 .container {
   display: flex;
@@ -141,6 +154,8 @@ img {
   display: flex;
   justify-content: space-around;
   height: 50%;
+  margin-top: 250px;
+  margin-bottom: 250px;
 }
 .imagem
 {
@@ -158,16 +173,16 @@ img {
   justify-content: center;
   line-height: 1.3;
 }
-  .imagem img
-  {
-    border-radius: 5%;
-    height: 100%;
-    width: 100%;
-  }
-  .texto h1
-  {
-    text-align: left;
-    font-size: xx-large;
+.imagem img
+{
+  border-radius: 5%;
+  height: 100%;
+  width: 100%;
+}
+.texto h1
+{
+  text-align: left;
+  font-size: xx-large;
   }
 
 /* Texto com imagem */
@@ -221,6 +236,7 @@ img {
   padding: 8px 12px;
   width: 100%;
   font-family: "Rubik", sans-serif;
+  margin-top: 40px;
 }
 /* Number text (1/3 etc) */
 
@@ -290,7 +306,11 @@ button:hover
   border-radius: 2%;
   max-height: 600px;
   border: 3px solid  black;
-  box-shadow: rgb(red, green, blue);
+}
+.carrossel2
+{
+  margin-top: 250px;
+  margin-bottom: 500px;
 }
 /* Carrosel 2 */
 
@@ -443,8 +463,7 @@ button:hover
 @media screen and (max-width: 768px) 
 {
   #footer_content {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+    display: block;
   }
 }
 
