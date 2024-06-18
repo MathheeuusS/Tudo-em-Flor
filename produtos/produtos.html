@@ -1,201 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="produto.css">
-    <title>Produtos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="produto.css">
+  <title>Produtos</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <img class="logo" src="imgprodutos/Logo2.png">
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-          <ul class="nav-list">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
+
 
   <main>
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Ver Tudo</button>
       <button class="btn" onclick="filterSelection('tiara')"> Tiaras</button>
       <button class="btn" onclick="filterSelection('buque')"> Buquês</button>
-      <button class="btn" onclick="filterSelection('flordecabelo')"> Flores De Cabelo</button>
-      <button class="btn" onclick="filterSelection('flormultiuso')"> Flores Multiuso</button>
+      <button class="btn" onclick="filterSelection('flordecabelo')"> Acessórios</button>
+      <button class="btn" onclick="filterSelection('flormultiuso')"> Crochês Multiuso</button>
       <button class="btn" onclick="filterSelection('chaveiro')"> Chaveiros</button>
       <button class="btn" onclick="filterSelection('outros')"> Outros Produtos</button>
     </div>
-          
-          <!-- Portfolio Gallery Grid -->
-          <div class="row">
-            <div class="column tiara">
-              <div class="content">
-                <img src="imgprodutos/tiara.jpeg" alt="Mountains" style="width:100%">
-                <h4>Tiara</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column tiara">
-              <div class="content">
-                <img src="imgprodutos/tiara (2).jpeg" alt="Lights" style="width:100%">
-                <h4>Tiara</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column tiara">
-              <div class="content">
-                <img src="imgprodutos/tiara (3).jpeg" alt="tiara" style="width:100%">
-                <h4>Tiara</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column tiara">
-              <div class="content">
-                <img src="imgprodutos/tiara (4).jpeg" alt="Lights" style="width:100%">
-                <h4>Tiara</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column tiara">
-              <div class="content">
-                <img src="imgprodutos/tiara (5).jpeg" alt="Lights" style="width:100%">
-                <h4>Tiara</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column tiara">
-              <div class="content">
-                <img src="imgprodutos/tiara (6).jpeg" alt="Lights" style="width:100%">
-                <h4>Tiara</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column tiara">
-              <div class="content">
-                <img src="imgprodutos/tiara (7).jpeg" alt="Lights" style="width:100%">
-                <h4>Tiara</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-          
-            <div class="column buque">
-              <div class="content">
-                <img src="imgprodutos/buque.jpeg" alt="Car" style="width:100%">
-                <h4>Retro</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column buque">
-              <div class="content">
-                <img src="imgprodutos/buque (2).jpeg" alt="Car" style="width:100%">
-                <h4>Buquê</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column buque">
-              <div class="content">
-                <img src="imgprodutos/buque (3).jpeg" alt="Car" style="width:100%">
-                <h4>Classic</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column buque">
-              <div class="content">
-                <img src="imgprodutos/buque (4).jpeg" alt="Car" style="width:100%">
-                <h4>Buquê</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column buque">
-              <div class="content">
-                <img src="imgprodutos/buque (5).jpeg" alt="Car" style="width:100%">
-                <h4>Buquê</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column buque">
-              <div class="content">
-                <img src="imgprodutos/buque (6).jpeg" alt="Car" style="width:100%">
-                <h4>Buquê</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column buque">
-              <div class="content">
-                <img src="imgprodutos/buque (7).jpeg" alt="Car" style="width:100%">
-                <h4>Buquê</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-          
-            <div class="column flordecabelo">
-              <div class="content">
-                <img src="imgprodutos/flordecabelo (3).jpeg" alt="flordecabelo" style="width:100%">
-                <h4>Girl</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column flordecabelo">
-              <div class="content">
-                <img src="imgprodutos/flordecabelo.jpeg" alt="flordecabelo" style="width:100%">
-                <h4>Man</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column flordecabelo">
-              <div class="content">
-                <img src="imgprodutos/flordecabelo (2).jpeg" alt="flordecabelo" style="width:100%">
-                <h4>Woman</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-            <div class="column flormultiuso">
-              <div class="content">
-                <img src="imgprodutos/flormultiuso.jpeg" alt="flormultiuso" style="width:100%">
-                <h4>Woman</h4>
-                <p>Lorem ipsum dolor..</p>
-              </div>
-            </div>
-                <div class="column chaveiro">
-                  <div class="content">
-                    <img src="imgprodutos/chaveiro.jpeg" alt="chaveiro" style="width:100%">
-                    <h4>Woman</h4>
-                    <p>Lorem ipsum dolor..</p>                
-              </div>
-            </div>
-            <div class="column outros">
-              <div class="content">
-                <img src="imgprodutos/outros.jpeg" alt="outros" style="width:100%">
-                <h4>Woman</h4>
-                <p>Lorem ipsum dolor..</p>                
-          </div>
-        </div>
-        <div class="column outros">
-          <div class="content">
-            <img src="imgprodutos/outros (2).jpeg" alt="outros" style="width:100%">
-            <h4>Woman</h4>
-            <p>Lorem ipsum dolor..</p>                
-      </div>
-    </div>
-          <!-- END GRID -->
-          </div>
-          
-      </main>
 
-      <script src="produto.js"></script>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column tiara">
+        <div class="content">
+          <img src="imgprodutos/tiara.jpeg" alt="Mountains" style="width:100%">
+          <h4>Tiara</h4>
+          <p>Crochês/Cores Distintas</p>
+        </div>
+      </div>
+      <div class="column tiara">
+        <div class="content">
+          <img src="imgprodutos/tiara (2).jpeg" alt="Lights" style="width:100%">
+          <h4>Tiara</h4>
+          <p>Crochês/Cores Distintas</p>
+        </div>
+      </div>
+      <div class="column tiara">
+        <div class="content">
+          <img src="imgprodutos/tiara (3).jpeg" alt="tiara" style="width:100%">
+          <h4>Tiara</h4>
+          <p>Crochês/Cores Distintas</p>
+        </div>
+      </div>
+      <div class="column tiara">
+        <div class="content">
+          <img src="imgprodutos/tiara (4).jpeg" alt="Lights" style="width:100%">
+          <h4>Tiara</h4>
+          <p> Crochês/ Cores Semelhantes</p>
+        </div>
+      </div>
+      <div class="column tiara">
+        <div class="content">
+          <img src="imgprodutos/tiara (5).jpeg" alt="Lights" style="width:100%">
+          <h4>Tiara</h4>
+          <p>Crochês/ Cores Distintas</p>
+        </div>
+      </div>
+      <div class="column tiara">
+        <div class="content">
+          <img src="imgprodutos/tiara (6).jpeg" alt="Lights" style="width:100%">
+          <h4>Tiara</h4>
+          <p>Crochês/Cores Semelhantes</p>
+        </div>
+      </div>
+      <div class="column tiara">
+        <div class="content">
+          <img src="imgprodutos/tiara (7).jpeg" alt="Lights" style="width:100%">
+          <h4>Tiara</h4>
+          <p>Crocês/ Cores Distintas</p>
+        </div>
+      </div>
+
+      <div class="column buque">
+        <div class="content">
+          <img src="imgprodutos/buque.jpeg" alt="Car" style="width:100%">
+          <h4>Buquê</h4>
+          <p>Crochê em formato de flores</p>
+        </div>
+      </div>
+      <div class="column buque">
+        <div class="content">
+          <img src="imgprodutos/buque (2).jpeg" alt="Car" style="width:100%">
+          <h4>Buquê</h4>
+          <p>Buquê de Crochê</p>
+        </div>
+      </div>
+      <div class="column buque">
+        <div class="content">
+          <img src="imgprodutos/buque (3).jpeg" alt="Car" style="width:100%">
+          <h4>Buquê</h4>
+          <p>Buquê de Crochê</p>
+        </div>
+      </div>
+      <div class="column buque">
+        <div class="content">
+          <img src="imgprodutos/buque (4).jpeg" alt="Car" style="width:100%">
+          <h4>Buquê</h4>
+          <p>Buquês de Crochês</p>
+        </div>
+      </div>
+      <div class="column buque">
+        <div class="content">
+          <img src="imgprodutos/buque (5).jpeg" alt="Car" style="width:100%">
+          <h4>Buquê</h4>
+          <p>Planta de Crochê</p>
+        </div>
+      </div>
+      <div class="column buque">
+        <div class="content">
+          <img src="imgprodutos/buque (6).jpeg" alt="Car" style="width:100%">
+          <h4>Buquê</h4>
+          <p>Buquê de Crochê</p>
+        </div>
+      </div>
+      <div class="column buque">
+        <div class="content">
+          <img src="imgprodutos/buque (7).jpeg" alt="Car" style="width:100%">
+          <h4>Buquê</h4>
+          <p>Buquê de Crochê</p>
+        </div>
+      </div>
+
+      <div class="column flordecabelo">
+        <div class="content">
+          <img src="imgprodutos/flordecabelo (3).jpeg" alt="flordecabelo" style="width:100%">
+          <h4>Anel</h4>
+          <p>Anéis de Crochês</p>
+        </div>
+      </div>
+      <div class="column flordecabelo">
+        <div class="content">
+          <img src="imgprodutos/flordecabelo.jpeg" alt="flordecabelo" style="width:100%">
+          <h4>Flores de Cabelo</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column flordecabelo">
+        <div class="content">
+          <img src="imgprodutos/flordecabelo (2).jpeg" alt="flordecabelo" style="width:100%">
+          <h4>Anel</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column flormultiuso">
+        <div class="content">
+          <img src="imgprodutos/flormultiuso.jpeg" alt="flormultiuso" style="width:100%">
+          <h4>Crochês Multiuso</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column flormultiuso">
+        <div class="content">
+          <img src="imgprodutos/flormultiuso (2).jpeg" alt="flormultiuso" style="width:100%">
+          <h4>Crochês Multiuso</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column flormultiuso">
+        <div class="content">
+          <img src="imgprodutos/flormultiuso (1).jpeg" alt="flormultiuso" style="width:100%">
+          <h4>Crochês Multiuso</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column flormultiuso">
+        <div class="content">
+          <img src="imgprodutos/flormultiuso (3).jpeg" alt="flormultiuso" style="width:100%">
+          <h4>Crochês Multiuso</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column flormultiuso">
+        <div class="content">
+          <img src="imgprodutos/flormultiuso (6).jpeg" alt="flormultiuso" style="width:100%">
+          <h4>Crochês Multiuso</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column chaveiro">
+        <div class="content">
+          <img src="imgprodutos/chaveiro.jpeg" alt="chaveiro" style="width:100%">
+          <h4>Chaveiro</h4>
+          <p>Chaveiro/Crochê</p>
+        </div>
+      </div>
+      <div class="column chaveiro">
+        <div class="content">
+          <img src="imgprodutos/chaveiro (2).jpeg" alt="chaveiro" style="width:100%">
+          <h4>Chaveiro</h4>
+          <p>Chaveiro/Crochê</p>
+        </div>
+      </div>
+      <div class="column chaveiro">
+        <div class="content">
+          <img src="imgprodutos/chaveiro (3).jpeg" alt="chaveiro" style="width:100%">
+          <h4>Chaveiro</h4>
+          <p>Chaveiro/Crochê</p>
+        </div>
+      </div>
+      <div class="column chaveiro">
+        <div class="content">
+          <img src="imgprodutos/chaveiro (4).jpeg" alt="chaveiro" style="width:100%">
+          <h4>Chaveiro</h4>
+          <p>Chaveiro/Crochê</p>
+        </div>
+      </div>
+      <div class="column chaveiro">
+        <div class="content">
+          <img src="imgprodutos/chaveiro (5).jpeg" alt="chaveiro" style="width:100%">
+          <h4>Chaveiro</h4>
+          <p>Chaveiro/Crochê</p>
+        </div>
+      </div>
+      <div class="column chaveiro">
+        <div class="con">
+          <img src="imgprodutos/chaveiro (6).jpeg" alt="chaveiro" style="width:100%">
+            <h4>Chaveiro</h4>
+          <p>Chaveiro/Crochê</p>
+          </div>         
+        </div>
+      </div>
+      <div class="column outros">
+        <div class="content">
+          <img src="imgprodutos/outros.jpeg" alt="outros" style="width:100%">
+          <h4>Chale de Crochê</h4>
+          <p>Chalés de Crochês</p>
+        </div>
+      </div>
+      <div class="column outros">
+        <div class="content">
+          <img src="imgprodutos/outros (2).jpeg" alt="outros" style="width:100%">
+          <h4>Cachecol de Crochê</h4>
+          <p>Cachecóis de Crochês</p>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+
+  </main>
+
+  <script src="produto.js"></script>
 </body>
+
 </html>
