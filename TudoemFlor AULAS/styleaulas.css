@@ -1,0 +1,37 @@
+@import url(NAV.css);
+@import url(FOOTER.css);
+
+@font-face {
+    font-family: 'Fonte Eras Bold ITC';
+    src: url(Eras-Bold-ITC_15884.ttf);
+    font-family: 'scrpit-mt-bold';
+    src: url(script-mt-bold.ttf);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+body {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+main
+  {
+    max-width: 100%;
+    margin: auto;
+  }
+
+/* NAVVVV */
+
+/* NAVVVV */
+
+/* FOOTER */
+
+/* FOOTER */
